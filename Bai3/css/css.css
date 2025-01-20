@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: UTM;
+
+}
+@font-face {
+    font-family: UTM;
+    src: url(fonts/UTMDuepuntozero.ttf);
+}
+@font-face {
+    font-family:UTM-Bold ;
+    src: url(fonts/UTM\ DuepuntozeroBold.ttf);
+}
+.container{
+    max-width: 1440px;
+    margin:  0 auto;
+}
+.fist-header ,.row-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(87, 138, 55);
+    padding: 15px 10px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 10px;
+    border-left: 1px solid white;
+}
+nav ul li:nth-of-type(1){
+    border-left: none;
+}
+.second-header img{
+    width: 100%;
+}
+a{
+    color: white;
+}
+h1{
+    text-align: center;
+    margin: 30px 0;
+    color: rgb(169, 14, 74);
+    font-family: UTM;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,310px);
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.row .col-4{
+    border: 1px solid black;
+}
+.item{
+    padding: 10px;
+}
+.item img{
+    max-width: 100%;
+}
+.item h2,.item p{
+    text-align: center;
+}
+h2{
+    color: #FF9A00;
+    font-family: UTM-Bold;
+}
+p{
+    color: #D10363;
+}
+.name-design p,button{
+    color: white;
+    font-weight: 700;
+}
+input,button{
+    padding: 5px;
+    border-radius: 5px;
+}
+button{
+    background-color: #D10363;
+}
+li a:active{
+    color: #D10363;
+}
+.item img:hover{
+    animation-name: animationImg;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+@keyframes animationImg {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
