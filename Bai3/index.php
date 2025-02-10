@@ -20,6 +20,7 @@ $router->get('/detail',[DetailController::class,'index'] );
 $router->get('/gioithieu',[GioiThieuController::class,'index'] );
 $router->get('/dangky',[DangKyController::class,'index'] );
 $router->get('/dangnhap',[DangNhapController::class,'index'] );
+$router->get('/test',[HomeController::class,'test'] );
 
 
 

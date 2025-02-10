@@ -5,7 +5,7 @@ Use PDO;
 class BaseModel
 {
     protected $conn = null;
-    protected $tablename = null;
+    protected $tableName = null;
     protected $primaryKey = 'id';
     protected $sqlBuilder = null;
 
@@ -20,7 +20,7 @@ class BaseModel
 
     public static function all() {
         $model = new static;
-        $model->sqlBuilder = "SELECT * FROM " . $model->tablename;
+        $model->sqlBuilder = "SELECT * FROM " . $model->tableName;
         $stmt = $model->conn->prepare($model->sqlBuilder);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_CLASS);
@@ -32,15 +32,15 @@ class BaseModel
      */
     public static function create($data) {
         $model = new static;
-        $sql = "INSERT INTO   $model->tablename  (";
-        $value = "VALUES(";
+        $sql = "INSERT INTO   $model->tableName  (";
+        $value = " VALUES(";
         foreach ($data as $column => $val) {
             $sql .= "`$column` ,";
-            $value .= ":$value,";
+            $value .= ":$column,";
         }
 
         $sql = rtrim($sql, ',') . ")" . rtrim($value, ',') . ")";
-        
+        // dd($sql);
         $stmt = $model->conn->prepare($sql);
         $stmt->execute($data);
 
