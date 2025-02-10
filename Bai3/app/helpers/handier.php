@@ -10,3 +10,11 @@ function view($pathView, $data = [])
   return $blade->run($pathView, $data);
 
 }
+
+function dd($data){
+  echo "<pre>";
+  var_dump($data);
+  echo "</pre>";
+  die;
+
+}

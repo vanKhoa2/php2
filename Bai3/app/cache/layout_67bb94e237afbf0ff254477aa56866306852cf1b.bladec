@@ -16,12 +16,12 @@
  <div class="fist-header">              
  <nav>
  <ul>
- <li><a href="/">trang chu<a></li>
- <li><a href="/gioithieu">Gioi Thieu</a></li>
+ <li><a href="/">Trang chủ<a></li>
+ <li><a href="<?php ?>">Giới thiệu</a></li>
  <li><a href="/detail">Chi Tiết SP</a></li>
- <li><a href="/lienhe">Lien He</a></li>
- <li><a href="dangky">Dang Ky</a></li>
- <li><a href="dangnhap">Dang Nhap</a></li>
+ <li><a href="/lienhe">Liên Hệ</a></li>
+ <li><a href="dangky">Đăng Ký    </a></li>
+ <li><a href="dangnhap">Đăng nhập    </a></li>
  <li><a href="admin">Admin</a></li>
  </ul>
  </nav>

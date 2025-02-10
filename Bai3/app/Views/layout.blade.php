@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="./css/css.css">
 </head>
 
-<body>
+<!-- <body>
     <header>
         <div class="container">
             <div class="fist-header">              
                 <nav>
                     <ul>
-                        <li><a href="/">trang chu<a></li>
-                        <li><a href="/gioithieu">Gioi Thieu</a></li>
+                        <li><a href="/">Trang chủ<a></li>
+                        <li><a href="<?php ?>">Giới thiệu</a></li>
                         <li><a href="/detail">Chi Tiết SP</a></li>
-                        <li><a href="/lienhe">Lien He</a></li>
-                        <li><a href="dangky">Dang Ky</a></li>
-                        <li><a href="dangnhap">Dang Nhap</a></li>
+                        <li><a href="/lienhe">Liên Hệ</a></li>
+                        <li><a href="dangky">Đăng Ký    </a></li>
+                        <li><a href="dangnhap">Đăng nhập    </a></li>
                         <li><a href="admin">Admin</a></li>
                     </ul>
                 </nav>
@@ -76,6 +76,6 @@
             </div>
         </div>
     </footer>
-</body>
+</body> -->
 
-</html>
+</html> 
